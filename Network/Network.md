@@ -1,6 +1,8 @@
 # Internet et les réseaux en 10 minutes
 
-## Apercu des réseaux
+## Introductions aux réseaux et à l'Internet
+
+### Les réseaux
 
 Un peu comme dans la vraie vie, on ne peut parler d'un réseau d'amis qu'a partir d'au moins deux personnes (qui ont un **lien** d'amitié ou encore un lien professionnel.
 Pour les ordinateurs c'est pareil,**il faut au moins deux machines** liées (on dit également **interconnectées**) pour parler de réseau.
@@ -11,20 +13,37 @@ Toujours dans le même cas de figure, si on à deux groupes de personnes (par ex
 
 > 1 réseau + 1 réseau = 1 réseau.
 
-Mine de rien on se rend compte que tous les réseaux du monde sont au final interconnectés. On parle par exemple de réseaux universitaire pour parler de l'interconnection des réseaux des universités, des réseaux hospitaliers pour les réseaux entre les hoitaux, les dispensaires et éventuellement les cliniques, les réseaux entre les institutions gouvernementales, etc...
 
-Au final le grand réseau mondial qui est composé de tous les réseaux du monde représente ce qu'on appelle Internet (avec un **I** majuscule).
-
-> Σ réseaux = Internet 
 
 Un réseau est donc **un ensemble d'ordinateurs interconnectés**. Pour généraliser on préferera parler d'**équipements** qui englobe les les ordinateurs, les serveurs, les imprimantes...
 
 > Aujourd'hui, lorsqu'on parle d'interconnection entre les équipements, on converge vers la technologie IoT "Internet of Things" (ou en français, l'Internet des objets), les objets pouvant être une voiture, un réfigérateur ou encore un téléviseur. Vous comprendrez qu'il ne s'agit pas d'objets simple mais plutôt d'objet intelligent (dit Smart).
 
-les n groupe d'amis (par exemple le groupe des informaticiens) et un autre groupes (disons celui des gestionnaires), si on les regroupe ensemble nous auront au final un seul groupe (dans lequel on trouve des sous groupe).
-En informatique, un réseau interconnecté à un autre réseau donne également un réseau.
+### Internet
 
-Tout bête, si on continue dans cette même logique on peut avoir un réseau d'oridnateur d'une faculté, si on la connecte a celui des autres faculté, cela donnera un grand réseau universitaire, ensuite on y connectera le ministère ou le département de tutelle qui également voudra être connecté au autre département d'un gouvernement
-dans le cas d'un réseauun réseau d'amis, s'il y a une seule personne, le réseau n'existe pas en lui même
+Mine de rien on se rend compte qu'il existe dans le monde une multitude de réseaux informatiques, on peut imaginer qu'il s'agisse par exemple de:
 
- 
+- réseaux universitaire (interconnectant les universités), 
+- réseaux hospitaliers (reliant les hopitaux, les dispensaires et éventuellement les cliniques), 
+- réseaux entre les institutions gouvernementales (reliant les département et permettant de mener à bien les missions gouvernementales),
+- réseaux inter-agences (interconnectant les agences bancaires, les assurances, les magasins d'une même enseigne)
+
+Il existe un réseau à connaitre, c'est le réseau Estonien appelé "X-Road" qui pour simplifier permet d'interconnecter toutes les institutions d'un pays, publiques et privées (Nous verrons sa particularité plus loin).
+
+Et bien dites vous qu'une grand majorité des réseaux d'un pays sont "connectés" entre eux et que tous les pays le sont également. Ainsi on se retrouve avec le plus grand réseau mondial, qui est la somme de tous les réseau qu'on appelle **le réseau des réseaux** ou encore Internet (avec un **I** majuscule).
+
+> Σ réseaux = Internet 
+
+### Réseaux publiques et réseaux privés.
+
+
+Au niveau de l'Internet et des réseaux d'un pays, il y a des réseaux qui veulent être vu par les autres, on parle alors de **réseaux publiques**, et il y en a d'autres qui prèfèrent pour des raison de sécurité restez isolés (comme éventuellement les réseaux des agences commerciales, d'assurances ou bancaires), il s'agit alors de **réseaux privés**.
+
+### Utilité des réseaux
+
+A présent nous savons que les équipements sont connectés mais pourquoi?
+Il y a une seule grande raison: **LE PARTAGE**.
+il peut s'agir:
+
+- du partage de ressources
+- du partage d'informations
