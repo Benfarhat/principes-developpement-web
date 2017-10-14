@@ -5,7 +5,7 @@
 
 ### Les réseaux
 
-Un peu comme dans la vraie vie, on ne peut parler d'un réseau d'amis qu'a partir d'au moins deux personnes (qui ont un **lien** d'amitié ou encore un lien professionnel.
+Un peu comme dans la vraie vie, on ne peut parler d'un réseau ou d'un groupe d'amis qu'a partir d'au moins deux personnes (qui ont un **lien** d'amitié ou encore un lien professionnel.
 Pour les ordinateurs c'est pareil,**il faut au moins deux machines** liées (on dit également **interconnectées**) pour parler de réseau.
 
 > un ordinateur + un ordinateur = 1 réseau
@@ -39,7 +39,72 @@ Et bien dites vous qu'une grand majorité des réseaux d'un pays sont "connecté
 
 Au niveau de l'Internet et des réseaux d'un pays, il y a des réseaux qui veulent être vu par les autres, on parle alors de **réseaux publiques**, et il y en a d'autres qui prèfèrent pour des raison de sécurité restez isolés (comme éventuellement les réseaux des agences commerciales, d'assurances ou bancaires), il s'agit alors de **réseaux privés**.
 
-### Utilité des réseaux
+## Classification des réseaux
+
+### Intranet et Extranet
+
+la classification de base est celle entre Internet, Intranet et Extranet.
+
+- Internet est comme nous l'avons vu le réseau mondial.
+- Intranet est un réseau à porté local réservé à une zone bien délimité (un étage, une entreprise, une maison)
+- Extranet est l'interconnexion d'un réseaux externe à un réseau interne.
+
+### Selon le type de support
+Il y a deux types de connexions, les connexions **filaires** et les connexions **sans fils**
+
+#### Connexions filaires
+
+Les connexions filaires se font via:
+
+- Un **cable coaxial**
+- Une **paire torsadée** (ou paire téléphonique)
+- Une **fibre Optique**
+La difference entre ces 3 supports de transmissions réside dans la fiabilité (perte d'information), la vitesse (le débit), la distance et le coût.
+
+#### Connexions sans fils
+
+Les connexions sans-fil se font via:
+L'infra-rouge
+Le bluetooth
+Le Wifi
+Le Wimax
+La transmission satellite
+
+### Selon la distance
+
+Pour faire simple:
+
+- Si ca ne dépasse pas les quelques mètres on parle de **PAN (Personal Area Network)**, Comme par exemple la connexion bluetooth entre deux smartphones, ...
+- Si c'est dans une zone géographique très limité (comme pour l'Intranet) on parle de réseau **LAN (Locale Area Network)**,
+- Si le réseau s'étend à uquelques dizaines de kilomètres, on parle de réseau **MAN (Metropolitan Area Network)**,
+- Si le réseau s'étend à un pays ou plus encore on parle de **WAN (Wide Area Network)** ou réseau étendue, Notez qu'Internet est un WAN.
+
+### Selon son schéma
+
+Il s'agit ici de la topologie des réseaux, ou comment les équipements sont connecté
+
+#### La connection en bus
+
+Il y a un seul support de communication que tous les équipements se partage, il est simple d'utilisation mais très peu fiable car si le support de communication est endommagés, l'ensemble du réseau est paralysé.
+
+#### La connexion en anneau (Token Ring)
+
+Sachez qu'elle existe dans les réseaux de types IBM, tous les ordinateurs forment un anneau qui peut faire plusieurs kilomètres, et seul celui qui à un jeton peut communiquer. Par analogie, les rond-point automobile sont plus fluide que les carrefours.
+
+#### La connexion en étoile
+
+Tous les équipements ont un cable dédié qui les connectent à un élement centrale (un peu comme les prises électriques des maisons qui sont connecté à un élément central qui est en principe le compteur électrique).
+Dans cette topologie si un cable se déchire, une seule machine est en panne.Par contre si l'élement centrale qui interconnecte tous les équipements tombe en panne, le réseau entier est paralysé
+
+
+#### La connexion en maille
+
+Chaque ordinateur a un cable qui va vers les autres ordinateurs, ainsi si un cable est coupé, un ordinateur ne peut plus commmunique avec un seul ordinateur et continuera à émettre et recevoir avec le reste.
+Le problème de cette topologie est très couteuse. si par exemple vous faites partie d'un réseau de 100 ordinateurs, sachez qu'il faudrait 99 cables qui sont connectés à votre machine.
+On utilise plutot cette topologie à plus grand échelle pour interconnecter les réseaux entre eux.
+
+
+## Besoin des réseaux
 
 A présent nous savons que les équipements sont connectés mais pourquoi?
 Il y a une seule grande raison: **LE PARTAGE**.
@@ -81,7 +146,6 @@ Un cas évident de mise en clustering est l'hébergement d'un site web. Il faut 
 > - actif-passif: une machine travail alors que la seconde reste en pose jusqu'a ce que la première machine ne répond plus.
 
 
-
 ***Attention:** On trouve parfois la notion de **Stack** (ou stacking) au niveau des équipements réseaux. Deux élements en stack ne veulent pas dire en cluster. Le stack est une sorte de partage des taches qui bien sur sont indépendantes. Si un équipement ne répond plus, seul la motier des taches sont bloqués.* 
 > *Dans un magasin, il arrive qu'une ou plusieurs caisses tombent en panne. Dans le cas du fonctionnement en cluster, les clients seraient redirigé vers l'une des caisses fonctionnelles, dans le cas des équipements stacks, les clients doivent attendre que la caisse redeviennent fonctionnelle.
 C'est un moindre mal ou parfois on préfère une paralysie partielle des infrastructures qu'une paralysie totale.*
@@ -118,9 +182,50 @@ Il existe plusieurs types de client que l'on peut résumer comme suit
 
 ##### Client et serveur en même temps
 
-Si une machine offre un service et consomme également ce service, on parle alors d'un environnement **pair à pair** (**peer-to-peer** ou **P2P** en anglais). 
+Si une machine offre un service et consomme également ce service, on parle alors d'un environnement d'**égal à égal** ou **pair à pair** (**peer-to-peer** ou **P2P** en anglais). 
 L'utilisation du partage de fichiers dit **torrent** ou **magnet links** ou de flux multimédia (**streaming**) se base sur la technologie P2P (Exemple des outils de type **bitTorrent**).
 
 Dans ce cas on ne parle plus de client ou de serveur mais de **pair** et de **noeud**.
 
 L'avantage du bittorent est que d'une part tout le monde (les noeuds) est potentiellement un serveur est donc potentiellement une source d'information et d'autre part ce qui est recu provient de plusieurs sources et donc de recevoir (et respectivement d'envoyer) plus rapidement.
+
+## Architecture des clients-serveurs
+
+### Quelques définitions
+
+- Un **tier** veut dire "zone" ou "niveau".
+- Une **requête** est une demande du client vers le serveur
+- Une **réponse** est le résultat qu'envoi un serveur suite à une demande
+
+### Architecture 2-tier
+
+L'architecture 2 tier (ou à deux niveaux) est un architecture ou une partie  offrent des services (comprenez donc qu'elle est constitué d'un serveur) et une autre demande et consomme les services du serveur à savoir les clients.
+On appelle également cette architecture l'**architecture client-serveur**
+> Un site web est un exemple simple d'architecture à deux niveaux. le premier étant celui des clients (ou des internautes) et le second celui du serveur.
+
+### Architecture 3-tier
+
+L'architecture 3-tier est comme pour l'architecture 2-tier auquel nous avons rajouté une seconde zone de serveurs pour lui affecter quelques taches qui aurait pu être attribué à la premier zone.
+> Un serveur web offre plusieurs service dont:
+> 
+> - le service web qui lis les requête des utilisateurs et envoie des réponses (les pages web) aux demandeurs c'est la **couche présentation**, 
+> - le service qui s'occupe des données, qu'on appelle le gestionnaire de base de donnée (**SGBD**) a pour tache d'enregistrer les nouvelles pages du sites, d'extraire le contenu des pages demandés, de faire de la recherche dans ces pages ou encore des calculs. C'est la couche accès aux données
+> Imaginez qu'un site soit consulter par plusieurs centaines de personnes au même moment et hors "heures de pointes", alors la partie dite base de donnée sera affecté à un autre serveur dans le 3ème niveau.
+
+### Architecture d'égal à égal
+
+Comme vu précédemment, il s'agit du cas ou tous les équipements peuvent être client ou serveur. Il n'y a donc pas de serveur dédié et surtout pas de point critique. L'inconvénient qu'on lui attribue est la difficulté de l'administrer.
+
+## Diffusion et transmission des informations
+
+### Selon le sens
+
+Dans le cas d'un communication **duplex** (dans les deux sens) il y a deux type de diffusions;
+
+Communication **full-duplex**: la communication peut se faire en même temps
+Communication **half-duplex**: la communication se fait à l'alternat. (comme dans lors d'une communication téléphonique, l'**appelant** et l'**appelé** ne parle jamais en même temps).
+
+> Un connexion full duplex est bien sur plus rapide, imaginer un route avec 10 voitures d'un coté et 10 voitures de l'autres. Si la route est à deux voies, alors les véhicules peuvent circuler simplement sans s'arrêter
+> Par contre s'il s'agit d'une vois unique alors un véhivule ne peut s'engager sur la voie que si elle est vide, sous risque de **collisions**.
+
+Selon la destination
