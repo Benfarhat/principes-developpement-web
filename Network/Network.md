@@ -2,29 +2,32 @@
 
 ## Introductions aux réseaux et à l'Internet
 
+### Définition des réseaux
 
-### Les réseaux
+Un peu comme dans le monde réel, on ne peut pas parler d'un réseau ou d'un groupe d'amis qu'à partir d'au moins deux personnes (qui ont un **lien** d'amitié ou encore un lien professionnel.
+En informatique c'est pareil,**il faut au moins deux machines** liées (on dit également **interconnectées**) pour avoir un réseau.
 
-Un peu comme dans la vraie vie, on ne peut parler d'un réseau ou d'un groupe d'amis qu'a partir d'au moins deux personnes (qui ont un **lien** d'amitié ou encore un lien professionnel.
-Pour les ordinateurs c'est pareil,**il faut au moins deux machines** liées (on dit également **interconnectées**) pour parler de réseau.
+> **un ordinateur + un ordinateur = 1 réseau**
 
-> un ordinateur + un ordinateur = 1 réseau
+Toujours dans le même cas de figure, si on à deux groupes de personnes et qu'ils décident tous ensemble de se donner rendez vous au même endroit, nous obtenons au final un seul groupe (composé dans le détails de sous groupes comme par exemple celui des femmes, des hommes, des enseignants, des parents, des informaticiens, des gestionnaires, etc...). 
+Dans le domaine des réseaux informatique, si l'on a deux réseaux distincts et qu'on les interconnecte alors on obtient un plus grand réseau.
 
-Toujours dans le même cas de figure, si on à deux groupes de personnes (par exemple les parents d'élèves et les enseignants) et qu'ils décident tous ensemble de se donner rendez vous, nous obtenons au final un seul groupe (composé dans le détails de sous groupes comme par exemple celui des femmes, des hommes, des enseignants, des parents, des informaticiens, des gestionnaires, etc...). Dans le domaine des réseaux informatique, si l'on a deux réseaux distincts et qu'on les interconnecte alors on obtient un grand réseau.
+> **1 réseau + 1 réseau = 1 réseau**
 
-> 1 réseau + 1 réseau = 1 réseau.
+Dans la définition du réseau, **un ensemble d'ordinateurs interconnectés** peut être généralisé en préférant le terme d'**équipements** interconnectés ou de **noeuds**.
+Un noeud englobe les éléments suivant: 
+
+- les **stations de travail** (PC, MAC, ...)
+- les **serveurs** (qui ont plus de puissance que les stations de travail)
+- les **équipements réseaux** (qui sont des équipements pouvant être contactés sur le réseau sans passer par un intermédiaire)
 
 
-Un réseau est donc **un ensemble d'ordinateurs interconnectés**. Pour généraliser on préferera parler d'**équipements** qui englobe les les ordinateurs, les serveurs, les imprimantes...
-
-> Aujourd'hui, lorsqu'on parle d'interconnection entre les équipements, on converge vers la technologie IoT "Internet of Things" (ou en français, l'Internet des objets), les objets pouvant être une voiture, un réfigérateur ou encore un téléviseur. Vous comprendrez qu'il ne s'agit pas d'objets simple mais plutôt d'objet intelligent (dit Smart).
-
-### Internet
+### Qu'est ce que l'Internet
 
 Mine de rien on se rend compte qu'il existe dans le monde une multitude de réseaux informatiques, on peut imaginer qu'il s'agisse par exemple de:
 
-- réseaux universitaire (interconnectant les universités), 
-- réseaux hospitaliers (reliant les hopitaux, les dispensaires et éventuellement les cliniques), 
+- réseaux universitaire (interconnectant les universités et éventuellement les centres de recherches), 
+- réseaux hospitalier (reliant les hopitaux, les dispensaires et également les cliniques), 
 - réseaux entre les institutions gouvernementales (reliant les département et permettant de mener à bien les missions gouvernementales),
 - réseaux inter-agences (interconnectant les agences bancaires, les assurances, les magasins d'une même enseigne)
 
@@ -32,22 +35,49 @@ Il existe un réseau à connaitre, c'est le réseau Estonien appelé "X-Road" qu
 
 Et bien dites vous qu'une grand majorité des réseaux d'un pays sont "connectés" entre eux et que tous les pays le sont également. Ainsi on se retrouve avec le plus grand réseau mondial, qui est la somme de tous les réseau qu'on appelle **le réseau des réseaux** ou encore Internet (avec un **I** majuscule).
 
-> Σ réseaux = Internet 
+> **Σ réseaux = Internet** 
+
 
 ### Réseaux publiques et réseaux privés.
 
 
-Au niveau de l'Internet et des réseaux d'un pays, il y a des réseaux qui veulent être vu par les autres, on parle alors de **réseaux publiques**, et il y en a d'autres qui prèfèrent pour des raison de sécurité restez isolés (comme éventuellement les réseaux des agences commerciales, d'assurances ou bancaires), il s'agit alors de **réseaux privés**.
+Au niveau des gestionnaires des réseaux d'un pays, il y en a qui veulent que leurs réseaux soient vu par les autres et donc soient connectés à l'Internet, on parle alors de **réseaux publiques**, et il y en a d'autres qui prèfèrent pour des raison de sécurité restez isolés (comme éventuellement les réseaux des agences commerciales, d'assurances ou bancaires), on parle alors de **réseaux privés**.
 
-## Classification des réseaux
+> Lorsqu'on parle de connecter un réseau à l'Internet, cela ne veut pas forcément dire que tout sera publique. Au point de jonction entre le réseau d'un organisme et Internet, se trouve un ensemble d'équipements de sécurité et de technologies qui permettront de dire qui fait quoi et qui accède à quoi.
 
-### Intranet et Extranet
+#### Le FSI ou FAI
 
-la classification de base est celle entre Internet, Intranet et Extranet.
+L'organisme qui s'occupe de connecter un réseau à l'Internet (un réseau qui sera dit publique) est appelé FSI (Fournisseur de Service Internet) ou FAI (Fournisseur d'Accès à l'Internet).
+ Pour la petite histoire, du fait de l'explosion de la bulle Internet, de nombreux FAI on fait faillite et ont dut s'adapter pour survivre, ainsi il n'est pas rare de voir des rachats de ces organismes par des entreprises de télécommunications ou encore une restructuration interne pour étendre ces activités et rentabiliser leurs projets.
+
+
+### Internet Intranet et Extranet
 
 - Internet est comme nous l'avons vu le réseau mondial.
 - Intranet est un réseau à porté local réservé à une zone bien délimité (un étage, une entreprise, une maison)
 - Extranet est l'interconnexion d'un réseaux externe à un réseau interne.
+
+### Cloud
+
+Pour faire simple, dans chaque organisme, il y a en principe un serveur qui peut contenir des applications, des données ou des services.
+Le problème avec cette façon de faire est qu'il a du mal à gérer la mobilité.
+
+Si un organisme met ses serveurs, son stockage et ses ressources informatiques  et Services à dispositions sur Internet alors l'organisme à fait un premier par fair le Cloud (nuage en français) ou plus communément appelé le **Cloud Computing**.
+
+> Le cloud vous permet par exemple d'avoir un espace de stockage pour toutes vos photos, vos vidéos et d'y avoir accès partout dans le monde. Mieux encore, si votre ordinateur tombe en panne, il suffit d'en prendre un autre et de le connecter au cloud pour y avoir accès.
+ 
+Dans la réalité, ce sont de grandes sociétés qui louent leur ressources informatiques sur Internet, ce qui est plus rentable aux yeux des sociétés et des entreprises qui n'auront plus à gérer la partie achat, configuration, maintenance, connexion et extension, ainsi que la partie recrutement et formation du personnel necessaire. Aujourd'hui il suffit de souscrire à un des 3 modèles de services du cloud computing:
+
+- **IaaS (Infrastructure as a Service)**: Si vous avez besoin d'un serveur, le cloud computing vous en fournit en quelques minutes sans se soucier si ce dernier tombera en panne.
+- **PaaS (Plateform as a Service)**: Le cloud computing vous permet d'avoir à disposition la plateforme de votre choix, Cela peut être un système d'exploitation (le logiciel qui fait fonctionné les machines) ou alors un environnement de programmation ou encore de traitement vidéo.
+- **Saas (Software as a Service)**: Le cloud vous propose l'utilisation d'un service à distance comme par exemple un éditeur de texte.
+
+
+
+## Classification des réseaux
+
+Il y a plusieurs type de classification, présentons ici les plus connus
+
 
 ### Selon le type de support
 Il y a deux types de connexions, les connexions **filaires** et les connexions **sans fils**
@@ -102,6 +132,33 @@ Dans cette topologie si un cable se déchire, une seule machine est en panne.Par
 Chaque ordinateur a un cable qui va vers les autres ordinateurs, ainsi si un cable est coupé, un ordinateur ne peut plus commmunique avec un seul ordinateur et continuera à émettre et recevoir avec le reste.
 Le problème de cette topologie est très couteuse. si par exemple vous faites partie d'un réseau de 100 ordinateurs, sachez qu'il faudrait 99 cables qui sont connectés à votre machine.
 On utilise plutot cette topologie à plus grand échelle pour interconnecter les réseaux entre eux.
+
+
+
+
+
+### Le Cloud c'est quoi?
+
+### Nouveaux concepts d'interconnexion des objets
+
+De nos jours, deux nouveaux concepts font parler d'eux et doivent être connu si ce n'est pour la culture générale:
+l'IoT (Internet of things) et le M2M (Machine to Machine)
+
+Nous sommes tous connectés, il suffit de voir autour de nous, chacun a son smartphone, sa tablette ou encore sa montre dite connecté, qu'il consulte régulièrement. La technologie veut que nous allions au dela et que tous les objets de la vie puissent être connectés, cela est valable également dans le domaine industriel ou chaque objet doit avoir un capteur ou senseur et puissent envoyer les données récupérées pour qu'elles soient traitées, analysées et améliore les décisions du futurs. La façon avec laquelle un accès distant sera proposé à ces objets ou capteurs fait la différence entre l'IoT et le M2M
+
+L'IoT repose sur une identification de chaque objet via l'EPC (Electronic Product Code) et le RFID (Méthode de récupération et mémorisation des données à distances) en envoyant cela sur une plateforme Cloud.
+
+La technologies M2M fonctionne sur un espace plus réduite via un réseau de télécommunication mobile (GPRS / 2.5G ou UMTS / 3G)
+
+
+
+Depuis quelques années, lorsqu'on parle d'interconnection entre les équipements, on introduit la notion d'**IoT "Internet of Things"** (ou en français, l'Internet des objets) pour décrire une notion ambitieuse et futuriste qui veut que tous les objets de la vie comme par exemple une voiture, un réfigérateur, une montre, ou encore un téléviseur puissent être connectés. 
+> Vous comprendrez qu'il ne s'agit pas d'objets simple mais plutôt d'objet intelligent (dit Smart). 
+> 
+> Il est bon de savoir que connecter des objets est bien plus complexe que la connexion entre stations de travail et est souvent liées à des technologies tels que le RFID (méthode de mémorisation et récupération des données à distances) ou l'EPC (un moyen d'identification unique des objets). 
+
+
+
 
 
 ## Besoin des réseaux
@@ -228,4 +285,9 @@ Communication **half-duplex**: la communication se fait à l'alternat. (comme da
 > Un connexion full duplex est bien sur plus rapide, imaginer un route avec 10 voitures d'un coté et 10 voitures de l'autres. Si la route est à deux voies, alors les véhicules peuvent circuler simplement sans s'arrêter
 > Par contre s'il s'agit d'une vois unique alors un véhivule ne peut s'engager sur la voie que si elle est vide, sous risque de **collisions**.
 
-Selon la destination
+### Selon le destinataire
+
+- Si l'on envoi un message à un seul destinataire on parle de transmission **unicast**,
+- Si le message est pour un groupe de destinataire on parle alors de transmission **multicast**,
+- Si l'on envoi le message au plus proche d'un groupe ou le plus "efficace" on parle de transmission **anycast**
+- Et enfin si le message est destiné à tout le monde, il s'agit d'une transmission **broadcast**.
